@@ -1,0 +1,137 @@
+body {
+  background: linear-gradient(90deg, #000000, #737373);
+  color: #D9D9D9;
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+/* Header */
+
+header {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.header-container * {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.item-1 {
+  grid-row: span 2;
+  font-size: 300px;
+  font-weight: 700;
+  padding-right: 50px;
+}
+
+.item-2 {
+  font-size: 144px;
+  padding-top: 48px;
+  text-align: left;
+}
+
+.item-3 {
+  font-size: 61px;
+  font-weight: 500;
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+/* Main */
+
+main {
+  font-family: 'Barlow', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.main-container-1 { 
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  width: 52%;
+}
+
+.main-container-1 img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.main-container-1 p a {
+  color: white;
+}
+
+.main-container-2 {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.table {  
+  display: grid;
+  grid-template-columns: 200px minmax(400px,800px);
+  grid-template-rows: 200px 200px 200px;
+  gap: 50px;
+  width: 52%;
+  align-items: center;
+  text-align: left;
+
+  margin: 0;
+  padding: 0;
+}
+
+.table > h2 {
+  grid-column: span 2;
+  text-align: center;
+}
+
+/* Footer */
+
+footer {
+  font-family: 'Barlow', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+footer div {
+  padding: 30px;
+}
+
+.link {
+  border: #fff solid 3px;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 600;
+  color: white;
+  /* background-color: transparent; */
+}
+
+footer > div {
+  height: 20%;
+}
